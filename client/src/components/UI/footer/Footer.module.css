@@ -1,0 +1,47 @@
+.footer {
+    width: 100%;
+    background: white;
+    padding: 32px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 16px;
+}
+
+.link {
+    margin-bottom: 14px;
+
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__link {
+    display: flex;
+    margin-right: 24px;
+}
+
+.social__icon {
+    width: 21px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.social__text {
+    display: inline-block;
+}
+

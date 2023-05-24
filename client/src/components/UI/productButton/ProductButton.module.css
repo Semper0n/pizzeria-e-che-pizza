@@ -1,0 +1,13 @@
+.wrapper {
+    background-color: #ff7010;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.name {
+    color: white;
+    padding: 13px 32px;
+    font-size: 16px;
+}

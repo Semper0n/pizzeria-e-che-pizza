@@ -1,0 +1,26 @@
+.wrapper {
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper.active {
+    background-color: #ff7010;
+    color: white !important;
+}
+
+.wrapper:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.wrapper:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.name {
+    padding: 13px 32px;
+    font-size: 16px;
+    font-weight: normal;
+}
