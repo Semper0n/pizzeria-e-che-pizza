@@ -15,6 +15,8 @@ export default class ProductStore {
 
         this._selectedType = ''
 
+        this._totalPrice = 0
+
         this._selectedProductId = ''
 
         makeAutoObservable(this)
@@ -35,6 +37,12 @@ export default class ProductStore {
     setSelectedProductId(id) {
         this._selectedProductId = id
     }
+    addTotalPrice(price) {
+        this._totalPrice += price
+    }
+    reduceTotalPrice(price) {
+        this._totalPrice -= price
+    }
 
     get types() {
         return this._types
@@ -50,6 +58,9 @@ export default class ProductStore {
     }
     get selectedProductId() {
         return this._selectedProductId
+    }
+    get totalPrice() {
+        return this._totalPrice
     }
 
 }

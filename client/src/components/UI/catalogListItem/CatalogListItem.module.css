@@ -8,10 +8,6 @@
     overflow: hidden;
 }
 
-.wrapper:nth-child(4n) {
-    margin-right: 0;
-}
-
 .picture-wrapper {
     aspect-ratio: 1;
     overflow: hidden;
@@ -57,6 +53,14 @@
     margin-left: 20%;
 }
 
+
+
+@media (min-width: 900px) {
+    .wrapper:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 1300px) {
     .bottom-wrapper {
         flex-direction: column-reverse;
@@ -66,5 +70,27 @@
     .price {
         margin-left: 0;
         margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .wrapper {
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    .wrapper:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 48%;
+        margin-right: 4%;
+    }
+
+    .wrapper:nth-child(2n) {
+        margin-right: 0;
     }
 }

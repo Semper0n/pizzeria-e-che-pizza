@@ -4,13 +4,10 @@ import BasketItem from "../../components/UI/basketItem/BasketItem";
 import {observer} from "mobx-react-lite";
 import {fetchBasketProducts} from "../../http/basketAPI";
 import {fetchProducts} from "../../http/productAPI";
+import cl from "./Basket.module.css"
 
 const Basket = observer(() => {
     const {product} = useContext(Context)
-
-    product.basketProducts.map(basketItem => {
-
-    })
 
     useEffect(() => {
         fetchBasketProducts().then(data => product.setBasketProducts(data))
@@ -39,19 +36,14 @@ const Basket = observer(() => {
                 return basket
             })
             }
+            <div className={cl["total-price-wrapper"]}>
+                <p className={cl["total-price"]}>Итого: {product.totalPrice} ₽</p>
+            </div>
         </section>
 
     );
 });
 
 export default Basket;
-
-// return <BasketItem
-//     title={basketItem.item.name}
-//     price={basketItem.item.price}
-//     img={basketItem.item.img}
-//     // count={}
-//     size={basketItem.size}
-// />
 
 

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import cl from "./ProductPage.module.css";
 import ProductButton from "../../UI/productButton/ProductButton";
-import {createType, fetchOneProduct} from "../../../http/productAPI";
+import {fetchOneProduct} from "../../../http/productAPI";
 import SizeButton from "../../UI/sizeButton/SizeButton";
 import {createBasketProduct} from "../../../http/basketAPI";
 
@@ -112,7 +112,7 @@ const ProductPage = ({visible, setVisible, id}) => {
                             }
                         </div>
                         <div className={cl["bottom-menu"]}>
-                            <p className={cl.price}>Итого: {price} Р</p>
+                            <p className={cl.price}>Итого: {price} ₽</p>
                             <ProductButton name="Выбрать" onClick={addBasketProduct}/>
                         </div>
                     </div>

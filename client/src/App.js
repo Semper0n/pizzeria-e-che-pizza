@@ -32,13 +32,13 @@ const App = observer(() => {
     }
 
   return (
-        <BrowserRouter>
-            <Header />
-            <div className="page">
-                <AppRouter />
-            </div>
-            <Footer />
-        </BrowserRouter>
+    <BrowserRouter>
+        <Header />
+        <div className="page">
+            <AppRouter />
+        </div>
+        <Footer />
+    </BrowserRouter>
   );
 })
 

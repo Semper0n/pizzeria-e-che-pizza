@@ -45,3 +45,10 @@
     display: inline-block;
 }
 
+@media (max-width: 640px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

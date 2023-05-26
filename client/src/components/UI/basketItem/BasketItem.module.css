@@ -14,6 +14,7 @@
 
 .picture-wrapper {
     width: 120px;
+    min-width: 120px;
     overflow: hidden;
     margin-right: 16px;
 }
@@ -39,6 +40,8 @@
 .right {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    min-width: 220px;
 }
 
 .counter {
@@ -81,4 +84,34 @@
     font-weight: 600;
     margin-left: 40px;
     white-space: nowrap;
+}
+
+@media (max-width: 650px) {
+    .wrapper {
+    }
+
+    .left {
+    }
+
+    .right {
+        justify-content: flex-end;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .size {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        height: 24px;
+        width: 24px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
 }

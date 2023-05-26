@@ -1,0 +1,14 @@
+.total-price-wrapper {
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    justify-content: flex-end;
+}
+
+.total-price {
+    color: #ff7010;
+    font-size: 20px;
+    font-weight: 600;
+}

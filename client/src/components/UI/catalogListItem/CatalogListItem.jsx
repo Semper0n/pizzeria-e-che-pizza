@@ -18,7 +18,7 @@ const CatalogListItem = ({title, composition, price, img, id, onClick}) => {
                 <p className={cl.composition}>{composition}</p>
                 <div className={cl["bottom-wrapper"]}>
                     <ProductButton name="Выбрать" onClick={handleClick}/>
-                    <p className={cl.price}>от {price} Р</p>
+                    <p className={cl.price}>от {price} ₽</p>
                 </div>
             </div>
         </article>

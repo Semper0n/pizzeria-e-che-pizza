@@ -86,3 +86,16 @@
 .avatar-text {
 
 }
+
+@media (max-width: 600px) {
+    .work-time {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .work-time {
+        display: none;
+    }
+}
